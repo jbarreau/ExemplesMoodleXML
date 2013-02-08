@@ -18,6 +18,8 @@ public class Main {
 		Scanner x = new Scanner(System.in);
 		int j= x.nextInt();
 		System.out.println(j);
+		Main m = new Main();
+		m.threeWordsAboutKevin();
 	}
 
 
@@ -28,6 +30,14 @@ public class Main {
 	public static void julienListParam(String []args){
 		for (int i = 0 ; i < args.lenght() ; i++)
 			System.out.println(args[i]);
+	}
+
+	/**
+	* @author: julien
+	* to
+	*/
+	public static void threeWordsAboutKevin(){
+		System.out.println(threeWords);
 	}
 	
 
