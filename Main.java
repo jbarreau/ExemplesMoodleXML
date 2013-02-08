@@ -14,27 +14,21 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//CypherPrinter.Component CP = CypherPrinter.newComponent(new CypherPrinterImpl());
-		CypherPrinter.Component CP = new CypherPrinter.Component(
-				new CypherPrinterImpl(),
-				new CypherPrinter.Bridge(){});
-		
-		CP.cypheAndPrint().send("azertypP");
-		
-		Cyphezv1.Component C1 = new Cyphezv1.Component(
-				new Cyphezv1Impl(),
-				new Cyphezv1.Bridge(){});
-		
-		C1.cyphez().send("cyphezc1" + "     " + "lqsdiugblqsdfbviqsdbql");
-		
-		Cyphezv2.Component C2 = new Cyphezv2.Component(
-				new Cyphezv2Impl(),
-				new Cyphezv2.Bridge(){});
-		
-		C2.cyphez().send("cyphezc2" + "     " + "lqsdiugblqsdfbviqsdbql");
+		Scanner x = new Scanner(System.in);
+		int j= x.nextInt();
 		
 		
 		
-		
+	}
+
+	public void julienListParam(String [] args)
+	{
+
+		String deb = args[0];
+		for (int i =1;i<args.length;i++)
+		{
+			System.out.println("Param 1 " + args[i]);
+		}
+
 	}
 }
