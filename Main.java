@@ -9,26 +9,26 @@ import tp1Project.Cyphezv2;
 
 
 public class Main {
-
+	private String threeWords = "one, two words...";
 	/**
 	 * @param args
-	 */
+	 */	
 	public static void main(String[] args) {
+		julienListParam(args);
 		Scanner x = new Scanner(System.in);
 		int j= x.nextInt();
-		
-		
-		
+		System.out.println(j);
 	}
 
-	public void julienListParam(String [] args)
-	{
 
-		String deb = args[0];
-		for (int i =1;i<args.length;i++)
-		{
-			System.out.println("Param 1 " + args[i]);
-		}
-
+	/**
+	* @author: julien
+	* to print on std out each param, separate by \n
+	*/
+	public static void julienListParam(String []args){
+		for (int i = 0 ; i < args.lenght() ; i++)
+			System.out.println(args[i]);
 	}
+	
+
 }
